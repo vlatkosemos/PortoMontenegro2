@@ -47,7 +47,7 @@
                     <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/bluebg">
                         <RelativeLayout  android:layout_width="match_parent" android:padding="10dp" android:background="@drawable/bluebg" android:layout_height="match_parent">
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="M-SHOP" android:textSize="11dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
-                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/i2" />
+                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/eshop" />
                         </RelativeLayout>
                     </LinearLayout>
                     <LinearLayout android:layout_weight="1" android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/blue2">
@@ -59,7 +59,7 @@
                     <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/bluebg">
                         <RelativeLayout  android:layout_width="match_parent" android:padding="10dp" android:background="@drawable/blue3" android:layout_height="match_parent">
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="FACILITIES" android:textSize="11dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
-                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/i2" />
+                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/facilities" />
                         </RelativeLayout>
                     </LinearLayout>
 
@@ -73,13 +73,13 @@
                     <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/bluebg">
                         <RelativeLayout  android:layout_width="match_parent" android:padding="10dp" android:background="@drawable/blue3" android:layout_height="match_parent">
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="EVENTS" android:textSize="11dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
-                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/i2" />
+                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/events" />
                         </RelativeLayout>
                     </LinearLayout>
                     <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/blue2">
                         <RelativeLayout  android:layout_width="match_parent" android:padding="10dp" android:background="@drawable/bluebg" android:layout_height="match_parent">
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="CONTACT" android:textSize="11dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
-                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/i2" />
+                            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/contact" />
                         </RelativeLayout>
                     </LinearLayout>
                     <LinearLayout android:layout_weight="1" android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/bluebg">
@@ -114,7 +114,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="30dp"
             android:weightSum="3"
             android:layout_weight="1"
             >
@@ -122,7 +122,7 @@
                 android:background="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/images"
+                android:src="@drawable/logoportomontenegro"
                 android:maxHeight="50dp"/>
         </RelativeLayout>
 
