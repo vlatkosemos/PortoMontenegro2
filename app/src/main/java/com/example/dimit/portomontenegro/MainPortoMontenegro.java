@@ -60,6 +60,11 @@ public class MainPortoMontenegro extends FragmentActivity {
         getApplicationContext().startActivity(myIntent);
 
     }
+    protected void openMshop(View v){
+        Intent myIntent = new Intent(getApplicationContext(), Items.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
 
 
     @Override
