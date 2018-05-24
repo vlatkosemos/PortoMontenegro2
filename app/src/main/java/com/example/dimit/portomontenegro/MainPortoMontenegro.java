@@ -72,4 +72,9 @@ public class MainPortoMontenegro extends FragmentActivity {
         Intent myIntent = new Intent(context, MapsActivity2.class);
         context.startActivity(myIntent);
     }
+
+    protected void openFacilities(View v){
+        Intent myIntent = new Intent(context, Facilities.class);
+        context.startActivity(myIntent);
+    }
 }
