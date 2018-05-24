@@ -99,15 +99,9 @@
                         android:layout_marginRight="10dp"
                         android:gravity="left"
                         android:padding="10dp"
-                        android:text="Book a:"
+                        android:text="Reservations"
                         android:textAllCaps="true"
                         android:textColor="#8e000000" />
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:background="#3c000000"></RelativeLayout>
 
                     <ListView
                         android:id="@+id/grvFun"
@@ -139,12 +133,7 @@
                         android:text="Restourants and bars"
                         android:textAllCaps="true"
                         android:textColor="#8e000000" />
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:background="#3c000000"></RelativeLayout>
+
 
                     <ListView
                         android:id="@+id/grvNews"
