@@ -51,6 +51,9 @@ public class Items extends Activity {
         req.username="test";
         req.type="test";
         req.token="test";
+        req.p1="0";
+        req.p2="0";
+        req.p3="0";
         startDialog(req);
     }
 
