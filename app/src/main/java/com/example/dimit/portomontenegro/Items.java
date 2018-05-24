@@ -8,9 +8,7 @@ import android.os.Message;
 import android.widget.GridView;
 import android.widget.ListView;
 
-import com.example.dimit.portomontenegro.adapters.CustomGridView3;
 import com.example.dimit.portomontenegro.adapters.Item;
-import com.example.dimit.portomontenegro.adapters.ListEventAdapter;
 import com.example.dimit.portomontenegro.adapters.ListItemAdapter;
 import com.example.dimit.portomontenegro.objects.UHelper;
 import com.example.dimit.portomontenegro.objects.UModuleRequest;
@@ -27,12 +25,12 @@ import java.util.List;
 public class Items extends Activity {
 
     Context context;
-    public CustomGridView3 customGridAdapter;
+
     ArrayList<Item> gridArray = new ArrayList<Item>();
 
     ListItemAdapter customAdapter;
     List<ZEvents> lstEvenets = new ArrayList<>();
-    GridView lstData;
+    ListView lstData;
 
     UModuleResponse res;
 
@@ -96,7 +94,7 @@ public class Items extends Activity {
 
     public void BindData()
     {
-        lstData = (GridView) findViewById(R.id.gridview);
+        lstData = (ListView) findViewById(R.id.lstData);
 
         //lstEvenets.add(new ZEvents("Sting", "http://demo8.semos.com.mk/imagesPort/sting.jpg","Concert"));
         //lstEvenets.add(new ZEvents("Hamlet","http://demo8.semos.com.mk/imagesPort/hamlet.jpg","Theatre Show"));

@@ -66,7 +66,7 @@ public class Facilities extends AppCompatActivity {
         ListView grvNews = (ListView) findViewById(R.id.grvNews);
         adapter = new ListFacilitiesAdapter(context, R.layout.facilities_item, lstResAndBar);
         ViewGroup.LayoutParams layoutParams = grvNews.getLayoutParams();
-        int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, (int)(5*52), getResources().getDisplayMetrics());
+        int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, (int)(5*60), getResources().getDisplayMetrics());
         layoutParams.height = height;
         grvNews.setLayoutParams(layoutParams);
         grvNews.setAdapter(adapter);
@@ -75,7 +75,7 @@ public class Facilities extends AppCompatActivity {
         ListView grvFun = (ListView) findViewById(R.id.grvFun);
         adapter1 = new ListFacilitiesAdapter(context, R.layout.facilities_item, lstActivitys);
         ViewGroup.LayoutParams layoutParams1 = grvFun.getLayoutParams();
-        int height1 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, (int)(5*52), getResources().getDisplayMetrics());
+        int height1 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, (int)(5*60), getResources().getDisplayMetrics());
         layoutParams.height = height1;
         grvFun.setLayoutParams(layoutParams);
         grvFun.setAdapter(adapter1);
@@ -91,9 +91,9 @@ public class Facilities extends AppCompatActivity {
 
         lstActivitys.add(new ZFacilities("Berth","http://demo8.semos.com.mk/imagesPort/berth.png",2));
         lstActivitys.add(new ZFacilities("Pool","http://demo8.semos.com.mk/imagesPort/pool.png",2));
-        lstActivitys.add(new ZFacilities("Gym","http://demo8.semos.com.mk/imagesPort/gym.png",2));
         lstActivitys.add(new ZFacilities("Massage","http://demo8.semos.com.mk/imagesPort/massage.png",2));
         lstActivitys.add(new ZFacilities("Sauna","http://demo8.semos.com.mk/imagesPort/sauna.png",2));
+        lstActivitys.add(new ZFacilities("Gym","http://demo8.semos.com.mk/imagesPort/gym.png",2));
 
 
 

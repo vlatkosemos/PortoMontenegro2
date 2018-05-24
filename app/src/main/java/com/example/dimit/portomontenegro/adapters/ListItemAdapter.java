@@ -10,8 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.dimit.portomontenegro.R;
 import com.example.dimit.portomontenegro.objects.ZEvents;
@@ -53,8 +55,9 @@ public class ListItemAdapter extends ArrayAdapter<ZEvents> {
 
             if(RLayout == R.layout.row_gird_readingdigital)
             {
-                LinearLayout llOpenTehaterEvent=(LinearLayout) v.findViewById(R.id.llOpenTheaterEvent);
+                final LinearLayout llOpenTehaterEvent=(LinearLayout) v.findViewById(R.id.llOpenTheaterEvent);
                 TextView txtTitle=(TextView) v.findViewById(R.id.txtTitle);
+                TextView txtPrice=(TextView) v.findViewById(R.id.txtPrice);
                 ImageView imgSrc = (ImageView) v.findViewById(R.id.imgSrc);
                 final ImageButton btnBack=(ImageButton) v.findViewById(R.id.imgClose);
                 final ScrollView scrollViewTheatre=(ScrollView) v.findViewById(R.id.scrollViewTheatre);
@@ -64,15 +67,24 @@ public class ListItemAdapter extends ArrayAdapter<ZEvents> {
                     txtTitle.setText(p.Title);
                 }
 
+                if(txtPrice!=null)
+                {
+                    txtPrice.setText("50 $");
+                }
 
                 if(imgSrc!=null)
                 {
                     Picasso.with(v.getContext()).load(p.ImageUrl).into(imgSrc);
                 }
 
-                if(scrollViewTheatre!=null)
+                if(llOpenTehaterEvent!=null)
                 {
-                    scrollViewTheatre.setVisibility(View.GONE);
+                    llOpenTehaterEvent.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Toast.makeText(getContext(),"Clicked: "+p.Title,Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
 
             }
