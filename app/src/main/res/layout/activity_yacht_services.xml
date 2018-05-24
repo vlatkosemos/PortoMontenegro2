@@ -118,6 +118,7 @@
             android:layout_height="wrap_content"
             android:background="#f7f7f7"
 
+
             >
             <TextView
                 android:gravity="center"
