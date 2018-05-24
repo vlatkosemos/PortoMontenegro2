@@ -10,50 +10,65 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical">
-
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@id/imgClose"
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:background="#00000000"
-                android:src="@drawable/close"
-                />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="#f7f7f7"
+                android:orientation="horizontal">
 
-                >
+                <ImageButton
+                    android:id="@+id/imgBack"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:alpha="0.8"
+                    android:background="#00000000"
+                    android:src="@drawable/back"
+                    android:tint="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    >
 
 
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="YACHT SERVICES"
+                        android:textAllCaps="true"
+                        android:textColor="#ca000000" />
+                </LinearLayout>
             </LinearLayout>
 
-
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#3c000000"></RelativeLayout>
         </LinearLayout>
-
-
-    </LinearLayout>
-    <ScrollView
+        <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -96,7 +111,22 @@
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f7f7f7"
+
+            >
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ORDER"
+                android:textColor="#ca000000"
+                />
+
+        </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
