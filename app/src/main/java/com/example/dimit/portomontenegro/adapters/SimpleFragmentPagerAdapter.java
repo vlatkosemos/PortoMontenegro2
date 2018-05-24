@@ -60,9 +60,9 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
         } else if (position == 1) {
             Title="TOMORROW";
         } else if (position == 2) {
-            Title="26.05.2018";
-        } else {
             Title="27.05.2018";
+        } else {
+            Title="28.05.2018";
         }
         return Title;
     }
