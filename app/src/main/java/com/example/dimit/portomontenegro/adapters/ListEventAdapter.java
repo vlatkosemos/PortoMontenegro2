@@ -57,12 +57,23 @@ public class ListEventAdapter extends ArrayAdapter<ZEvents> {
                 LinearLayout llOpenTehaterEvent=(LinearLayout) v.findViewById(R.id.llOpenTheaterEvent);
                 TextView txtTitle=(TextView) v.findViewById(R.id.txtTitle);
                 TextView txtTypeEvent=(TextView) v.findViewById(R.id.txtTypeEvent);
-                TextView txtTime=(TextView) v.findViewById(R.id.txtTime);
                 ImageView imgSrc = (ImageView) v.findViewById(R.id.imgSrc);
-                TextView txtDescription=(TextView) v.findViewById(R.id.txtDescription);
-                Button link = (Button) v.findViewById(R.id.btnLink);
                 final ImageButton btnBack=(ImageButton) v.findViewById(R.id.imgClose);
                 final ScrollView scrollViewTheatre=(ScrollView) v.findViewById(R.id.scrollViewTheatre);
+
+                if(txtTitle!=null)
+                {
+                    txtTitle.setText(p.Title);
+                }
+                if(txtTypeEvent!=null)
+                {
+                    txtTypeEvent.setText(p.Type);
+                }
+
+                if(imgSrc!=null)
+                {
+                        Picasso.with(v.getContext()).load(p.ImageUrl).into(imgSrc);
+                }
 
                 if(scrollViewTheatre!=null)
                 {

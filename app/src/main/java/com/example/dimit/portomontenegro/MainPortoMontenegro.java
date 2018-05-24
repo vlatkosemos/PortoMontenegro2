@@ -2,6 +2,7 @@ package com.example.dimit.portomontenegro;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
@@ -14,6 +15,7 @@ import com.example.dimit.portomontenegro.adapters.ViewPagerAdapter;
 
 public class MainPortoMontenegro extends FragmentActivity {
 
+    Context context;
     ViewPager viewPager;
     ViewPager viewPager1;
     ViewPagerAdapter adapter;
@@ -36,23 +38,7 @@ public class MainPortoMontenegro extends FragmentActivity {
 
     };
 
-    protected void openContact(View v){
-        Intent myIntent = new Intent(getApplicationContext(), contact.class);
-        getApplicationContext().startActivity(myIntent);
 
-    }
-
-    protected void openEvents(View v){
-        Intent myIntent = new Intent(getApplicationContext(), Events.class);
-        getApplicationContext().startActivity(myIntent);
-
-    }
-
-    protected void openMap(View v){
-        Intent myIntent = new Intent(getApplicationContext(), MapsActivity2.class);
-        getApplicationContext().startActivity(myIntent);
-
-    }
 
 
     @Override
@@ -60,6 +46,7 @@ public class MainPortoMontenegro extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_porto_montenegro);
 
+        context=this;
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         adapter = new ViewPagerAdapter(MainPortoMontenegro.this,images);
         viewPager.setAdapter(adapter);
@@ -67,5 +54,22 @@ public class MainPortoMontenegro extends FragmentActivity {
         viewPager1 = (ViewPager) findViewById(R.id.viewPager1);
         adapter1 = new ViewPagerAdapter(MainPortoMontenegro.this,images1);
         viewPager1.setAdapter(adapter1);
+    }
+
+    protected void openContact(View v){
+        Intent myIntent = new Intent(context, contact.class);
+        context.startActivity(myIntent);
+
+    }
+
+    protected void openEvents(View v){
+        Intent myIntent = new Intent(context, Events.class);
+        context.startActivity(myIntent);
+
+    }
+
+    protected void openMap(View v){
+        Intent myIntent = new Intent(context, MapsActivity2.class);
+        context.startActivity(myIntent);
     }
 }
