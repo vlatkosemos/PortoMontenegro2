@@ -25,8 +25,6 @@ public class Facilities extends AppCompatActivity {
     List<ZFacilities> lstResAndBar= new ArrayList<>();
     List<ZFacilities> lstActivitys = new ArrayList<>();
     ListView lstData;
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facilities);

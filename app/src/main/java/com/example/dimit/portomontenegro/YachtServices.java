@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.dimit.portomontenegro.adapters.ListFacilitiesAdapter;
+import com.example.dimit.portomontenegro.adapters.ListServicesAdapter;
 import com.example.dimit.portomontenegro.objects.ZFacilities;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ import java.util.List;
 
 public class YachtServices extends Activity { Context context;
     ListFacilitiesAdapter adapter;
-    ListFacilitiesAdapter adapter1;
+    ListServicesAdapter adapter1;
 
 
     List<ZFacilities> lstResAndBar= new ArrayList<>();
@@ -110,17 +111,11 @@ public class YachtServices extends Activity { Context context;
     {
 
         grvFun = (ListView) findViewById(R.id.grvFun);
-        adapter1 = new ListFacilitiesAdapter(context, R.layout.facilities_item, lstResAndBar);
+        adapter1 = new ListServicesAdapter(context, R.layout.services_item, lstResAndBar);
         ViewGroup.LayoutParams layoutParams1 = grvFun.getLayoutParams();
         int height1 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, (int)(5*62), getResources().getDisplayMetrics());
         layoutParams1.height = height1;
         grvFun.setLayoutParams(layoutParams1);
-        grvFun.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(context,"test click"+position ,Toast.LENGTH_LONG).show();
-            }
-        });
         grvFun.setAdapter(adapter1);
     }
 
