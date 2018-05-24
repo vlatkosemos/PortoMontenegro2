@@ -2,11 +2,14 @@ package com.example.dimit.portomontenegro;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.dimit.portomontenegro.adapters.ViewPagerAdapter;
 
@@ -38,6 +41,8 @@ public class MainPortoMontenegro extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_porto_montenegro);
 
+
+        LinearLayout contactbtn = (LinearLayout) findViewById(R.id.contactbtn);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         adapter = new ViewPagerAdapter(MainPortoMontenegro.this,images);
         viewPager.setAdapter(adapter);
@@ -45,5 +50,20 @@ public class MainPortoMontenegro extends FragmentActivity {
         viewPager1 = (ViewPager) findViewById(R.id.viewPager1);
         adapter1 = new ViewPagerAdapter(MainPortoMontenegro.this,images1);
         viewPager1.setAdapter(adapter1);
+
+      contactbtn.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+
+              Intent i = new Intent(getApplicationContext(), contact.class);
+              getApplication().startActivity(i);
+
+          }
+      });
     }
+    protected void mapActivity(View v){
+        Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+        getApplication().startActivity(i);
+    }
+
 }
