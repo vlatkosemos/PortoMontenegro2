@@ -5,20 +5,16 @@ import android.graphics.Bitmap;
 
 
 public class Item {
-	public String Name;
-	public String Author;
-	public String ShortDescription;
-	public String Categories;
-	public String Publisher;
-	public String ISBN;
-	public String CIP;
-	public String COBISS;
-	public String ImageUrl;
-	public String Godina;
-	public int IdBooks;
-	public String BookUrl;
-	public String Type="";
-	public String ShortBookUrl;
+	public String Name="";
+	public String Author="";
+	public String ShortDescription="";
+	public String Categories="";
+	public String Publisher="";
+	public String ISBN="";
+	public String CIP="";
+	public String COBISS="";
+	public String ImageUrl="";
+	public String ShortBookUrl="";
 
 	public String getShortBookUrl() {
 		return ShortBookUrl;
@@ -28,21 +24,14 @@ public class Item {
 		ShortBookUrl = shortBookUrl;
 	}
 
-	public int IdCategory;
-	public int IdMyBooks;
 	public String Description;
 
-	public int IdPublisher;
-	public String TitlePublisher;
 	Bitmap image;
 	String title;
 	String datum;
 
 	public Double Price=0.0;
 	public Double DiscountPrice=0.0;
-	public Double HardCopyPrice=0.0;
-
-	public String Subtitle;
 
 	public String getName() {
 		return Name;
