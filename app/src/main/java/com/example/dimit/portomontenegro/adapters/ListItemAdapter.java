@@ -55,7 +55,6 @@ public class ListItemAdapter extends ArrayAdapter<ZEvents> {
             {
                 LinearLayout llOpenTehaterEvent=(LinearLayout) v.findViewById(R.id.llOpenTheaterEvent);
                 TextView txtTitle=(TextView) v.findViewById(R.id.txtTitle);
-                TextView txtTypeEvent=(TextView) v.findViewById(R.id.txtTypeEvent);
                 ImageView imgSrc = (ImageView) v.findViewById(R.id.imgSrc);
                 final ImageButton btnBack=(ImageButton) v.findViewById(R.id.imgClose);
                 final ScrollView scrollViewTheatre=(ScrollView) v.findViewById(R.id.scrollViewTheatre);
@@ -64,10 +63,7 @@ public class ListItemAdapter extends ArrayAdapter<ZEvents> {
                 {
                     txtTitle.setText(p.Title);
                 }
-                if(txtTypeEvent!=null)
-                {
-                    txtTypeEvent.setText(p.Type);
-                }
+
 
                 if(imgSrc!=null)
                 {
@@ -78,33 +74,7 @@ public class ListItemAdapter extends ArrayAdapter<ZEvents> {
                 {
                     scrollViewTheatre.setVisibility(View.GONE);
                 }
-                btnBack.setVisibility(View.GONE);
-                btnBack.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        scrollViewTheatre.setVisibility(View.GONE);
-                        btnBack.setVisibility(View.GONE);
-                    }
-                });
 
-                if(llOpenTehaterEvent!=null)
-                {
-                    llOpenTehaterEvent.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            if(scrollViewTheatre.getVisibility()==View.VISIBLE)
-                            {
-                                scrollViewTheatre.setVisibility(View.GONE);
-                                btnBack.setVisibility(View.GONE);
-                            }
-                            else
-                            {
-                                btnBack.setVisibility(View.VISIBLE);
-                                scrollViewTheatre.setVisibility(View.VISIBLE);
-                            }
-                        }
-                    });
-                }
             }
 
         }

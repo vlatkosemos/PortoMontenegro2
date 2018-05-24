@@ -11,6 +11,7 @@ import android.widget.ListView;
 import com.example.dimit.portomontenegro.adapters.CustomGridView3;
 import com.example.dimit.portomontenegro.adapters.Item;
 import com.example.dimit.portomontenegro.adapters.ListEventAdapter;
+import com.example.dimit.portomontenegro.adapters.ListItemAdapter;
 import com.example.dimit.portomontenegro.objects.UHelper;
 import com.example.dimit.portomontenegro.objects.UModuleRequest;
 import com.example.dimit.portomontenegro.objects.UModuleResponse;
@@ -29,7 +30,7 @@ public class Items extends Activity {
     public CustomGridView3 customGridAdapter;
     ArrayList<Item> gridArray = new ArrayList<Item>();
 
-    ListEventAdapter customAdapter;
+    ListItemAdapter customAdapter;
     List<ZEvents> lstEvenets = new ArrayList<>();
     GridView lstData;
 
@@ -103,7 +104,7 @@ public class Items extends Activity {
         //lstEvenets.add(new ZEvents("2 Pac", "http://demo8.semos.com.mk/imagesPort/pac.jpg","Concert"));
         //lstEvenets.add(new ZEvents("Arctic Monkeys", "http://demo8.semos.com.mk/imagesPort/monkeys.jpg","Concert"));
 
-        customAdapter = new ListEventAdapter(context,R.layout.concert_layout, lstEvenets);
+        customAdapter = new ListItemAdapter(context,R.layout.concert_layout, lstEvenets);
         lstData.setAdapter(customAdapter);
 
     }
