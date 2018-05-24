@@ -1,6 +1,7 @@
 package com.example.dimit.portomontenegro;
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -58,11 +59,11 @@ public class EventFragment extends Fragment {
 
     public void Start()
     {
-        lstEvenets.add(new ZEvents(" dada"));
-        lstEvenets.add(new ZEvents(" dada"));
-        lstEvenets.add(new ZEvents(" dada"));
-        lstEvenets.add(new ZEvents(" dada"));
-        lstEvenets.add(new ZEvents(" dada"));
+        lstEvenets.add(new ZEvents("Sting", "http://demo8.semos.com.mk/imagesPort/sting.jpg","Concert"));
+        lstEvenets.add(new ZEvents("Hamlet","http://demo8.semos.com.mk/imagesPort/hamlet.jpg","Theatre Show"));
+        lstEvenets.add(new ZEvents("Star Wars: The Last Jedi","http://demo8.semos.com.mk/imagesPort/wars.jpeg","Movie"));
+        lstEvenets.add(new ZEvents("2 Pac", "http://demo8.semos.com.mk/imagesPort/pac.jpg","Concert"));
+        lstEvenets.add(new ZEvents("Arctic Monkeys", "http://demo8.semos.com.mk/imagesPort/monkeys.jpg","Concert"));
 
 
     }
