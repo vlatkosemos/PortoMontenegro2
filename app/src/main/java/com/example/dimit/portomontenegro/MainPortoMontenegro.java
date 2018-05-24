@@ -53,6 +53,11 @@ public class MainPortoMontenegro extends FragmentActivity {
         getApplicationContext().startActivity(myIntent);
 
     }
+    protected void openYahtServices(View v){
+        Intent myIntent = new Intent(getApplicationContext(), YachtServices.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
 
 
     @Override

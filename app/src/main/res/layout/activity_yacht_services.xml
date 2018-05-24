@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YachtServices"
+    android:background="@drawable/gradientpozadina">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        >
+        <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/bluebg"
+            android:layout_width="match_parent">
+            <RelativeLayout  android:layout_width="match_parent" android:padding="10dp" android:background="@drawable/bluebg" android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="M-SHOP" android:textSize="11dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/petrolicon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

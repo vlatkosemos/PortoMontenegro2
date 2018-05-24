@@ -50,7 +50,7 @@
                             <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/eshop" />
                         </RelativeLayout>
                     </LinearLayout>
-                    <LinearLayout android:layout_weight="1" android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/blue2">
+                    <LinearLayout android:onClick="openYahtServices" android:layout_weight="1" android:layout_height="wrap_content" android:layout_margin="1dp"  android:layout_span="1" android:minHeight="123dp" android:background="@drawable/blue2">
                         <RelativeLayout  android:layout_width="match_parent" android:padding="10dp" android:background="@drawable/blue2" android:layout_height="match_parent">
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="YACHT SERVICES" android:textSize="11dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
                             <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="40dp" android:layout_alignParentEnd="true" android:layout_height="150dp" android:src="@drawable/i2" />
