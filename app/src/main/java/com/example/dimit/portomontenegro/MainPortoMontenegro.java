@@ -2,11 +2,13 @@ package com.example.dimit.portomontenegro;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.dimit.portomontenegro.adapters.ViewPagerAdapter;
 
@@ -33,6 +35,26 @@ public class MainPortoMontenegro extends FragmentActivity {
             img311.toString(),
 
     };
+
+    protected void openContact(View v){
+        Intent myIntent = new Intent(getApplicationContext(), contact.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
+
+    protected void openEvents(View v){
+        Intent myIntent = new Intent(getApplicationContext(), Events.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
+
+    protected void openMap(View v){
+        Intent myIntent = new Intent(getApplicationContext(), MapsActivity2.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -10,8 +10,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">18sp</item>
+    <style name="MineCustomTabText" >
+
+    <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 </resources>
