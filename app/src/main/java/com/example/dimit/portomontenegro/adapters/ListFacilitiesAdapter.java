@@ -1,5 +1,6 @@
 package com.example.dimit.portomontenegro.adapters;
 
+import android.app.Application;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Typeface;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.dimit.portomontenegro.R;
 import com.example.dimit.portomontenegro.objects.ZEvents;
@@ -31,7 +33,7 @@ public class ListFacilitiesAdapter  extends ArrayAdapter<ZFacilities> {
         super(context, resource, items);
     }
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         final ZFacilities p = getItem(position);
 
@@ -57,6 +59,9 @@ public class ListFacilitiesAdapter  extends ArrayAdapter<ZFacilities> {
                 LinearLayout llOpenTehaterEvent=(LinearLayout) v.findViewById(R.id.llOpenTheaterEvent);
                 TextView txtTitle=(TextView) v.findViewById(R.id.txtTitle);
                 ImageView imgSrc = (ImageView) v.findViewById(R.id.imageSrc);
+                final ImageView imgOrder = (ImageView) v.findViewById(R.id.ordericon);
+
+                imgOrder.setVisibility(View.GONE);
 
                 if(txtTitle!=null)
                 {
@@ -73,7 +78,12 @@ public class ListFacilitiesAdapter  extends ArrayAdapter<ZFacilities> {
                     llOpenTehaterEvent.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
+                            if(imgOrder.getVisibility() == View.GONE){
 
+                                imgOrder.setVisibility(View.VISIBLE);
+                            }else {
+                                imgOrder.setVisibility(View.GONE);
+                            }
                         }
                     });
                 }
