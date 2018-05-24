@@ -27,8 +27,8 @@ public class Item {
 	public String Description;
 
 	Bitmap image;
-	String title;
-	String datum;
+	public String title="";
+	public String datum="";
 
 	public Double Price=0.0;
 	public Double DiscountPrice=0.0;

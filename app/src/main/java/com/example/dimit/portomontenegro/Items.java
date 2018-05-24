@@ -22,7 +22,7 @@ public class Items extends Activity {
         GridView gridView = (GridView) findViewById(R.id.gridview);
 
         Item i1 = new Item("http://demo6.semos.com.mk/assets/images/logonov.png");
-        i1.ImageUrl="http://demo6.semos.com.mk/assets/images/logonov.png";
+        i1.title="http://demo6.semos.com.mk/assets/images/logonov.png";
         gridArray.add(i1);
         gridArray.add(i1);
         gridArray.add(i1);
