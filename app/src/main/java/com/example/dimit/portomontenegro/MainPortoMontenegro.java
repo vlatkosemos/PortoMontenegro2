@@ -38,7 +38,33 @@ public class MainPortoMontenegro extends FragmentActivity {
 
     };
 
+    protected void openContact(View v){
+        Intent myIntent = new Intent(getApplicationContext(), contact.class);
+        getApplicationContext().startActivity(myIntent);
 
+    }
+
+    protected void openEvents(View v){
+        Intent myIntent = new Intent(getApplicationContext(), Events.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
+
+    protected void openMap(View v){
+        Intent myIntent = new Intent(getApplicationContext(), MapsActivity2.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
+    protected void openYahtServices(View v){
+        Intent myIntent = new Intent(getApplicationContext(), YachtServices.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
+    protected void openMshop(View v){
+        Intent myIntent = new Intent(getApplicationContext(), Items.class);
+        getApplicationContext().startActivity(myIntent);
+
+    }
 
 
     @Override
@@ -56,25 +82,5 @@ public class MainPortoMontenegro extends FragmentActivity {
         viewPager1.setAdapter(adapter1);
     }
 
-    protected void openContact(View v){
-        Intent myIntent = new Intent(context, contact.class);
-        context.startActivity(myIntent);
 
-    }
-
-    protected void openEvents(View v){
-        Intent myIntent = new Intent(context, Events.class);
-        context.startActivity(myIntent);
-
-    }
-
-    protected void openMap(View v){
-        Intent myIntent = new Intent(context, MapsActivity2.class);
-        context.startActivity(myIntent);
-    }
-
-    protected void openFacilities(View v){
-        Intent myIntent = new Intent(context, Facilities.class);
-        context.startActivity(myIntent);
-    }
 }

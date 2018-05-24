@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YachtServices"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="#f7f7f7"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBack"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:alpha="0.8"
+                    android:background="#00000000"
+                    android:src="@drawable/back"
+                    android:tint="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    >
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="YACHT SERVICES"
+                        android:textAllCaps="true"
+                        android:textColor="#ca000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#3c000000"></RelativeLayout>
+        </LinearLayout>
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        >
+        <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="10dp"  android:layout_span="1" android:minWidth="50dp" android:background="@drawable/oilbg"
+            android:layout_width="match_parent">
+            <RelativeLayout  android:layout_width="match_parent" android:padding="1dp" android:background="@drawable/oilbg" android:layout_height="match_parent">
+                <TextView android:layout_centerVertical="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="4dp" android:paddingLeft="15dp" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="OIL" android:textSize="22dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="2dp" android:layout_alignParentEnd="true" android:layout_height="50dp" android:src="@drawable/petrolicon" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="10dp"  android:layout_span="1" android:minWidth="50dp" android:background="@drawable/eletricitybg"
+            android:layout_width="match_parent">
+            <RelativeLayout  android:layout_width="match_parent" android:padding="1dp" android:background="@drawable/eletricitybg" android:layout_height="match_parent">
+                <TextView android:layout_centerVertical="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="4dp" android:paddingLeft="15dp" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="ELETRICITY" android:textSize="22dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="2dp" android:layout_alignParentEnd="true" android:layout_height="50dp" android:src="@drawable/eletricityicon" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="10dp"  android:layout_span="1" android:minWidth="50dp" android:background="@drawable/waterbg"
+            android:layout_width="match_parent">
+            <RelativeLayout  android:layout_width="match_parent" android:padding="1dp" android:background="@drawable/waterbg" android:layout_height="match_parent">
+                <TextView android:layout_centerVertical="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="4dp" android:paddingLeft="15dp" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="WATER" android:textSize="22dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="2dp" android:layout_alignParentEnd="true" android:layout_height="50dp" android:src="@drawable/watericon" />
+            </RelativeLayout>
+        </LinearLayout><LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="10dp"  android:layout_span="1" android:minWidth="50dp" android:background="@drawable/cleaningbg"
+        android:layout_width="match_parent">
+        <RelativeLayout  android:layout_width="match_parent" android:padding="1dp" android:background="@drawable/cleaningbg" android:layout_height="match_parent">
+            <TextView android:layout_centerVertical="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="4dp" android:paddingLeft="15dp" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="CLEANING" android:textSize="22dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+            <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="2dp" android:layout_alignParentEnd="true" android:layout_height="50dp" android:src="@drawable/cleaningicon" />
+        </RelativeLayout>
+    </LinearLayout>
+        <LinearLayout android:layout_weight="1"  android:layout_height="wrap_content" android:layout_margin="10dp"  android:layout_span="1" android:minWidth="50dp" android:background="@drawable/crewbg"
+            android:layout_width="match_parent">
+            <RelativeLayout  android:layout_width="match_parent" android:padding="1dp" android:background="@drawable/crewbg" android:layout_height="match_parent">
+                <TextView android:layout_centerVertical="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="4dp" android:paddingLeft="15dp" android:textColor="#fff" android:maxLines="2" android:ellipsize="end" android:text="CREW" android:textSize="22dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <ImageView android:layout_width="100dp" android:paddingLeft="30dp" android:paddingTop="2dp" android:layout_alignParentEnd="true" android:layout_height="50dp" android:src="@drawable/crewicon1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f7f7f7"
+
+
+            >
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ORDER"
+                android:textColor="#ca000000"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
