@@ -107,7 +107,7 @@ public class ListFacilitiesAdapter  extends ArrayAdapter<ZFacilities> {
                         }
                     };
                 }
-                
+
             }
 
         }

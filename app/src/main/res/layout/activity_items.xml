@@ -1,142 +1,46 @@
-<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#000"
     android:id="@+id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
 
-    <!-- As the main content view, the view below consumes the entire
-         space available using match_parent in both dimensions. -->
-    <FrameLayout
-        android:id="@+id/content_frame"
-        android:layout_width="match_parent"
+
+    <!-- Page start -->
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
 
 
-            <GridView
-                android:id="@+id/gridview"
-                android:layout_width="match_parent"
-                android:layout_height="757dp"
-                android:layout_alignParentBottom="true"
-                android:layout_below="@+id/meni_app"
-                android:layout_gravity="center"
-                android:alwaysDrawnWithCache="true"
-                android:clipChildren="true"
-                android:clipToPadding="false"
-                android:columnWidth="125dp"
-                android:gravity="center|top"
-                android:horizontalSpacing="0dp"
-                android:numColumns="auto_fit"
-                android:paddingBottom="90dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="15dp"
-                android:scrollingCache="true"
-                android:smoothScrollbar="true"
-                android:stretchMode="spacingWidthUniform"
-                android:verticalSpacing="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
 
             <RelativeLayout
-                android:id="@+id/rlBackToTop"
-                android:gravity="center|bottom"
-                android:layout_width="fill_parent"
-                android:layout_height="130dp"
-                android:layout_marginBottom="0dp"
-                android:layout_alignParentBottom="true">
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1b000000"></RelativeLayout>
 
-                <LinearLayout
-                    android:id="@+id/Baneri"
-
-                    android:layout_width="fill_parent"
-                    android:layout_height="120dp"
-
-
-                    android:layout_alignParentBottom="true"
-                    android:background="@drawable/fader_baner"
-                    android:gravity="center|bottom"
-                    android:orientation="horizontal">
+            <ListView
+                android:clipToPadding="false"
+                android:paddingTop="0dp"
+                android:dividerHeight="0dp"
+                android:divider="@null"
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lstData">
+            </ListView>
+        </LinearLayout>
 
 
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_weight="1"
-                        android:layout_height="80dp"
-                        android:background="#ca000000"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-
-
-                        >
-
-                        <ImageButton
-                            android:id="@+id/baner2"
-                            android:background="#ccc"
-                            android:scaleType="fitXY"
-                            android:layout_width="fill_parent"
-                            android:layout_height="match_parent"
-                            >
-                        </ImageButton>
-                    </LinearLayout>
-
-                    <ImageButton
-                        android:id="@+id/kopce_skrij_baner"
-                        android:background="@drawable/close_circle"
-                        android:layout_gravity="top|left"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginLeft="-21dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        ></ImageButton>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="130dp"
-                    android:gravity="top|center"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true">
-
-                    <ImageButton
-                        android:id="@+id/back_to_top"
-                        android:layout_width="44dp"
-                        android:layout_height="44dp"
-                        android:layout_gravity="top|center"
-                        android:background="@drawable/back_to_top" />
-                </LinearLayout>
-            </RelativeLayout>
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="fill_parent"
-                android:layout_height="10dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/meni_app"
-                android:layout_marginTop="-1dp"
-                android:background="@drawable/senka_meni" />
-
-            <ImageView
-                android:id="@+id/imageView854"
-                android:layout_width="fill_parent"
-                android:layout_height="10dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/meni_app"
-                android:layout_marginTop="-1dp"
-                android:background="@drawable/senka_meni" />
-        </RelativeLayout>
-    </FrameLayout>
-
-    <!-- android:layout_gravity="start" tells DrawerLayout to treat
-         this as a sliding drawer on the left side for left-to-right
-         languages and on the right side for right-to-left languages.
-         The drawer is given a fixed width in dp and extends the full height of
-         the container. A solid background is used for contrast
-         with the content view. -->
-</android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
+</RelativeLayout>
