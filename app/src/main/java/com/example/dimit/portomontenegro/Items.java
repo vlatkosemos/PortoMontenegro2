@@ -79,7 +79,8 @@ public class Items extends Activity {
                         JSONObject source = sources.getJSONObject(i);
                         String Title = source.getString("Title");
                         String ImageSrc=source.getString("ImageSrc");
-                        lstEvenets.add(new ZEvents(Title, ImageSrc,"Concert"));
+                        String Price=source.getString("Price_String");
+                        lstEvenets.add(new ZEvents(Title, ImageSrc,Price));
                         //.lstMyNews.add(new ZMyNews(Title,ImageSrc,Site,PublishDate,Link));
                     }
                 }

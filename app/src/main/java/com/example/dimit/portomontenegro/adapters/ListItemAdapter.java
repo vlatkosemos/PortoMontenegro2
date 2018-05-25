@@ -69,7 +69,7 @@ public class ListItemAdapter extends ArrayAdapter<ZEvents> {
 
                 if(txtPrice!=null)
                 {
-                    txtPrice.setText("50 $");
+                    txtPrice.setText(p.Type+" $");
                 }
 
                 if(imgSrc!=null)
