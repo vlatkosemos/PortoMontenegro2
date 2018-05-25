@@ -56,7 +56,7 @@ public class ListServicesAdapter  extends ArrayAdapter<ZFacilities> {
 
             if(RLayout == R.layout.services_item)
             {
-                LinearLayout llOpenTehaterEvent=(LinearLayout) v.findViewById(R.id.llOpenTheaterEvent);
+                final LinearLayout llOpenTehaterEvent=(LinearLayout) v.findViewById(R.id.llOpenTheaterEvent);
                 TextView txtTitle=(TextView) v.findViewById(R.id.txtTitle);
                 ImageView imgSrc = (ImageView) v.findViewById(R.id.imageSrc);
                 final ImageView imgOrder = (ImageView) v.findViewById(R.id.ordericon);
@@ -79,9 +79,10 @@ public class ListServicesAdapter  extends ArrayAdapter<ZFacilities> {
                         @Override
                         public void onClick(View v) {
                             if(imgOrder.getVisibility() == View.GONE){
-
+                                llOpenTehaterEvent.setBackgroundResource(R.drawable.grayfaciselected);
                                 imgOrder.setVisibility(View.VISIBLE);
                             }else {
+                                llOpenTehaterEvent.setBackgroundResource(R.drawable.grayfaci);
                                 imgOrder.setVisibility(View.GONE);
                             }
                         }

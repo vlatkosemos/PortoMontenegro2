@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:background="@drawable/grayfaci"
+        android:layout_margin="4dp"
         android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/llOpenTheaterEvent"
